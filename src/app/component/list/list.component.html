@@ -1,0 +1,214 @@
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+  
+      <!-- Sidebar -->
+      <!-- <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+  
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+          <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-laugh-wink"></i>
+          </div>
+          <div class="sidebar-brand-text mx-2">SimulaApp </div>
+        </a>
+  
+      </ul> -->
+      <!-- End of Sidebar -->
+  
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+  
+        <!-- Main Content -->
+        <div id="content">
+  
+          <!-- Topbar -->
+          <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+  
+            <!-- Sidebar Toggle (Topbar) -->
+            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+              <i class="fa fa-bars"></i>
+            </button>
+  
+          </nav>
+          <!-- End of Topbar -->
+  
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+  
+            <!-- Page Heading -->
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+              <h1 class="h3 mb-0 text-gray-800">Administrador</h1>
+              <button class="btn btn-danger" type="button">
+                <div class="row">
+                  <h3>Stop</h3>      
+                </div>
+              </button>
+            </div>
+          
+  
+            <div class="row" >
+              <!-- Earnings (Monthly) Card Example -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                  <div class="card-body">
+                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                      <div class="input-group">
+                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-primary" type="button">
+                            <i class="fas fa-search fa-sm"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+          
+            
+  
+            </div>
+          
+            <!-- Content Row -->
+           
+            <div class="row">
+          
+              <div class="col-xl-4 col-lg-4">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Ejecucion</h6>
+                    <div class="dropdown no-arrow">
+                      <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                      </a>
+                    </div>
+                  </div>
+  
+                  <div class="card-body">
+                    <div *ngFor="let list of procesos ">
+                      <div class="card bg-primary text-white shadow">
+                          <div class="card-body">
+                            {{list.Nombre_de_sesion}}
+                            <div class="text-white-50 small">#f6c23e</div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="mt-4 text-center small">
+                      <span class="mr-2">
+                        <i class="fas fa-circle text-primary"></i> Direct
+                      </span>
+                      <span class="mr-2">
+                        <i class="fas fa-circle text-success"></i> Social
+                      </span>
+                      <span class="mr-2">
+                        <i class="fas fa-circle text-info"></i> Referral
+                      </span>
+                    </div>
+                  
+                </div>
+              </div>
+          
+                
+              </div>
+  
+              <div class="col-xl-4 col-lg-4">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Ejecucion</h6>
+                    <div class="dropdown no-arrow">
+                      <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                      <div class="card bg-warning text-white shadow">
+                        <div class="card-body">
+                          Warning
+                          <div class="text-white-50 small">#f6c23e</div>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-center small">
+                      <span class="mr-2">
+                        <i class="fas fa-circle text-primary"></i> Direct
+                      </span>
+                      <span class="mr-2">
+                        <i class="fas fa-circle text-success"></i> Social
+                      </span>
+                      <span class="mr-2">
+                        <i class="fas fa-circle text-info"></i> Referral
+                      </span>
+                    </div>
+                  
+                </div>
+              </div>
+          
+                
+              </div>
+  
+              <div class="col-xl-4 col-lg-4">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Ejecucion</h6>
+                    <div class="dropdown no-arrow">
+                      <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                      <div class="card bg-success text-white shadow">
+                        <div class="card-body">
+                          Warning
+                          <div class="text-white-50 small">#f6c23e</div>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-center small">
+                      <span class="mr-2">
+                        <i class="fas fa-circle text-primary"></i> Direct
+                      </span>
+                      <span class="mr-2">
+                        <i class="fas fa-circle text-success"></i> Social
+                      </span>
+                      <span class="mr-2">
+                        <i class="fas fa-circle text-info"></i> Referral
+                      </span>
+                    </div>
+                  
+                </div>
+              </div>
+          
+                
+              </div>
+              
+            </div>
+          
+          
+          
+          </div>
+          
+          <!-- /.container-fluid -->
+  
+        </div>
+        <!-- End of Main Content -->
+  
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright &copy; Your Website 2019</span>
+            </div>
+          </div>
+        </footer>
+        <!-- End of Footer -->
+  
+      </div>
+      <!-- End of Content Wrapper -->
+  
+    </div>
+  
+  </body>
+  
